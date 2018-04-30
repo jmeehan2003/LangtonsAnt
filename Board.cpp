@@ -102,6 +102,12 @@ char Board::getColor(int row, int col)
 	return color;
 }
 
+Board::~Board() {
+	for (int i=0; i < rows; i++)
+		delete [] antBoard[i];
+	delete [] antBoard;
+
+}
 
 
 

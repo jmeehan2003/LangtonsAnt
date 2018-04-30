@@ -24,6 +24,7 @@ public:
 	char getCurrentColor() { return currentColor; };
 	void setCurrentColor(char color) { currentColor = color; };
 	char getColor(int row, int col);
+	~Board();
 };
 
 #endif 
